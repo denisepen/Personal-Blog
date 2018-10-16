@@ -1,0 +1,27 @@
+<h1>This is the post</h1>
+
+<div class="user">
+
+
+
+<%#  %>
+  <%= "Title: #{@post.title}"%>  <br>
+  <%=  @post.body  %> <br>
+
+
+    <div >
+        <% if @post.image %>
+      <%= link_to image_tag(@post.image, style: 'width: 600px; height: 250px'), post_path  %>
+      <% end %>
+    </div>
+
+    <div >
+        <% if @post.file %>
+      <%= link_to "View File", @post.file  %>
+      <%= link_to "Download", @post.file, download: ''  %>
+      <% end %>
+    </div>
+
+
+<br> <br>
+</div>
