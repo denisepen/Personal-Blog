@@ -1,10 +1,10 @@
 
 <%= form_for @post do |f| %>
-  <p class="form-title">Create An Account</p>
+  <p class="form-title">Create A New Post</p>
   <%= f.label :title %>
 <%= f.text_field :title %> <br>
-<%# f.label :body %>
-<%= f.text_field :body %> <br>
+<%= f.label "Post Body"%>
+<%= f.text_area :body %> <br>
 
 <div class="field">
   <%= f.label :image %>
